@@ -21,7 +21,7 @@ def get_cal_month(year, mon, num, is_sunday):
             if start_wd == 6:
                 start_wd = 0
             else:
-                start_wd = start_wd + 1
+                start_wd += 1
 
         if start_wd > 0:
             for i in range(start_wd):
@@ -37,7 +37,7 @@ def get_cal_month(year, mon, num, is_sunday):
                 if start_wd == 6:
                     start_wd = 0
                 else:
-                    start_wd = start_wd + 1
+                    start_wd += 1
 
             this_weekday = month[start_wd]
             this_weekday.append(str(dt.day))
